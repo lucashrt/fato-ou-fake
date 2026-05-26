@@ -22,7 +22,7 @@ def preprocess_text(text):
     return text
 
 # 1. Carregar a base de dados do STF
-df = pd.read_csv('base_dados_stf_com_links.csv')
+df = pd.read_csv('base_dados_stf.csv')
 
 # 2. Aplicar Pré-processamento
 df['text_clean'] = df['text'].apply(preprocess_text)

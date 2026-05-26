@@ -20,7 +20,7 @@ def preprocess_text(text):
     return text
 
 # Treino do modelo
-df = pd.read_csv('base_dados_stf_com_links.csv')
+df = pd.read_csv('base_dados_stf.csv')
 df['text_clean'] = df['text'].apply(preprocess_text)
 
 vectorizer = TfidfVectorizer()
